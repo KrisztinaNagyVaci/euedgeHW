@@ -27,5 +27,6 @@ localhost:3000/main.html
 Testing
 ---
 In the project directory, insert the following command to see tests run
-
-`karma start`
+```
+karma start
+```
