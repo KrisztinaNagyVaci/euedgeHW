@@ -8,19 +8,21 @@ First Step - node
 
 1. Install the latest `node.js` from [here](https://nodejs.org)
 2. In the project directory, run this command to get all necessary packages
-
-`npm install`
+```
+npm install
+```
 ---
 Second step - server
 ---
 
 Start your local server
-
+```
 node server.js
-
+```
 You can access the site with the following url
-
-`localhost:3000/main.html`
+```
+localhost:3000/main.html
+```
 ---
 Testing
 ---
