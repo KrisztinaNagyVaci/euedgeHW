@@ -1,6 +1,5 @@
 
 // Karma configuration
-// Generated on Tue Aug 02 2016 22:09:36 GMT+0200 (Közép-európai nyári idő )
 
 module.exports = function(config) {
   config.set({
@@ -21,8 +20,8 @@ module.exports = function(config) {
       'node_modules/angular-animate/angular-animate.js',
       'node_modules/angular-mocks/angular-mocks.js',
       'node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js',
-      'app.js',
-      './factorytest.js',
+      './app/app.js',
+      './test/factorytest.js',
     ],
 
 

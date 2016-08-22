@@ -21,3 +21,9 @@ node server.js
 You can access the site with the following url
 
 localhost:3000/main.html
+---
+Testing
+---
+In the project directory, run the following command
+
+karma start

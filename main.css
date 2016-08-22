@@ -1,0 +1,74 @@
+.add_button {
+  margin: 20px;
+}
+
+.table_container {
+  margin: 20px;
+}
+
+table {
+  margin-top: 50px;
+}
+
+th {
+  text-align: left;
+}
+
+.heading_age {
+  text-align: right;
+}
+
+.name_job_title {
+  width: 400px;
+}
+
+.age {
+  text-align: right;
+  width: 40px;
+}
+
+.nick {
+  width: 150px;
+}
+
+.employee {
+  text-align: center;
+  width: 50px;
+}
+
+.delete {
+  width: 20px;
+}
+
+.form-group input.ng-invalid {
+  border: 2px solid red;
+}
+
+.form-group input.ng-valid {
+  border: 2px solid #00FFBF;
+}
+
+.form-group input.ng-untouched {
+  border: 2px solid #96DBF2;
+  border: 2px solid #cccccc;
+}
+
+.table_data tr.ng-leave{
+  transition: 0.5s linear all;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.table_data tr.ng-leave.ng-leave-active {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.data_dump {
+  margin: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+}
