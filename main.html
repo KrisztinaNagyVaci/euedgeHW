@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="HRSystem">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+  <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.1.1.js"></script>
+  <script src="./app.js"></script>
+  <link rel = "stylesheet" type = "text/css" href = "main.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <meta charset="UTF-8">
+</head>
+  <body ng-controller="AppController">
+    <div class="outer_container">
+      <div class="add_button_container">
+        <button type="submit" class="add_button btn btn-lg" ng-click="open()">Add</button>
+      </div>
+      <div class="table_container">
+      <table class="table table-bordered table-striped table-condensed">
+        <thead class="table_head">
+          <tr class="info">
+            <th class="heading_name_job_title">Name <br>(job title)</br></th>
+            <th class="heading_age">Age</th>
+            <th class="heading_nick">Nickname</th>
+            <th class="heading_employee">Employee</th>
+            <th class="heading_delete"></th>
+          </tr>
+        </thead>
+        <tbody class="table_data">
+            <tr ng-repeat="item in items">
+              <td class="name_job_title"> {{item.name}} <br>{{item.job}}</br></td>
+              <td class="age"> {{item.age}} </td>
+              <td class="nick"> {{item.nick}} </td>
+              <td class="employee"><input type="checkbox" ng-checked="item.employee"></div></td>
+              <td class="delete"><a href="" type="button" ng-click="deleteItem(item)">Delete</a></td>
+            </tr>
+       </tbody>
+      </table>
+    </div>
+      <div class="data_dump">
+        <h4>Data dump</h4>
+        <textarea> {{items}} </textarea>
+      </div>
+  </div>
+  </body>
+</html>
